@@ -1,52 +1,27 @@
-ToDo list : Blocket
+In Reality this is an edited version of a previus project.
+It is functionally the same, 
+but the big difference is that The previus one used Entity Framework, instead of ADO.NET.
+Most of everything else in this project is the same.
 
+
+
+
+List of content in ProjectDatabaseADO.NET.
 
 - LogIn form 
 	Logged in required to edit and to add items to database 
-	Check SuperStarRecepies to learn login maybe
-	And / or look at ShotgunGambling aswell
 
 - database
-	Who
+	User
+	Adverts
 	Categories
-	Date of entry
-	Price
 
-- Let users create new Ads in program
+- Let users create new as well as edit Adverts in program
 
-- Search with category filter
+- Search with category filter as an option.
 	Result is in listBox
-	Click on item in listBox to select
+	Dubble click on item in listBox to select
 
-- List is to be sorted by price OR by date
-
-- Sort by price and date
-
-
-
-
-optional code: 
-
-public FormAdvert()
-{
-// same as before
-}
-
-
-// Optional: constructor that accepts the existing login and blocket forms (recommended)
-public FormAdvert(FormLogin loginForm, FormBlocket blocketForm) : this()
-{
-    _loginForm = loginForm ?? _loginForm;
-    // use the provided BlocketForm if supplied
-    if (blocketForm != null) _blocketForm = blocketForm;
-}
-
-private void btnSave_Click(object sender, EventArgs e)
-{
-    User user = new User();
-    Advert advert = new Advert();
-    Category category = new Category();
-
-
-// continue from here
-}
+- If: List is to be sorted by price OR by date
+- If Else: Sort by price and date
+- Else: no sorting list
